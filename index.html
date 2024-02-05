@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Basketball Scoreboard</h1>
+    <div class="container">
+        <div>
+            <h3>HOME</h3>
+            <h2 id = "home-score" class="score">0</h2>
+            <div>
+                <button id="home-score-btn-1" class="btn home" onclick="increaseHomeScoreOne()">+1</button>
+                <button class="btn home" onclick="increaseHomeScoreTwo()">+2</button>
+                <button class="btn home" onclick="increaseHomeScoreThree()">+3</button>
+            </div>
+            
+        </div>
+        <div>
+            <button class="btn remove" onclick="removeScore()">Remove</button> 
+        </div>
+        <div>
+            <h3>GUEST</h3>
+            <h2 id="guest-score" class="score">0</h2>
+            <div>
+                <button class="btn guest" onclick="increaseGuestScoreOne()">+1</button>
+                <button class="btn guest" onclick="increaseGuestScoreTwo()">+2</button>
+                <button class="btn guest" onclick="increaseGuestScoreThree()">+3</button>
+            </div>
+            
+        </div>
+        
+        
+        </div>
+       
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
